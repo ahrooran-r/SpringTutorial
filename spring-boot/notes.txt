@@ -1,0 +1,17 @@
+# MAVEN commands for Spring Boot
+
+mvn package
+java -jar mycoolapp.jar
+
+mvn clean compile test
+mvn package
+mvn spring-boot:run
+
+# Spring Boot ACTUATOR endpoints
+/actuator
+            /health         -> health info about application
+            /info           -> information about project
+            /auditevents    -> audit events for application
+            /beans          -> list all beans registered in Spring application context
+            /mappings       -> list of all @RequestMapping paths
+            /threaddump     -> list of all threads
